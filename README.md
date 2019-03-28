@@ -11,7 +11,7 @@ a full-stack blog project  **node + bootstrap + mongo**
 > #### tips
 > This project is built for node.js moudule learning only. **It can not be used in production directly.**
 > #### ~~todo list~~
-> -[ ] database design
-> -[ ] token/session module 
-> -[ ] RTF moudule on admin page
+> - [ ] database design  
+> - [ ] token/session module   
+> - [ ]  RTF moudule on admin page  
 
