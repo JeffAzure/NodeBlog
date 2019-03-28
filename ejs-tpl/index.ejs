@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>
+        张嘉航 
+        <small>
+          我的秘密♂花园
+        </small>
+      </h1>
+      <ul class="list-group">
+
+        <% data.forEach(function(e){ %>
+          <li class="list-group-item">
+            <a href="/p?_id=<%= e._id %>">
+              <h3><%= e.title %></h3>
+            </a>
+            <p>日期：<%= e.date %></p>
+            <p><%= e.intro %></p>
+          </li>
+        <% }) %>
+
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

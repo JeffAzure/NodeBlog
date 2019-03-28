@@ -1,0 +1,45 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/bootstrap-3.3.7-dist/js/bootstrap.min.js" defer></script>
+  <link rel="stylesheet" href="./assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>
+        你的权限不足
+      </h1>
+      <h1>
+        <small>页面将在<span class="counter">5</span>秒后回到登录页</small>
+        <small>
+          <a href="/admin/login">点我立即跳转</a>
+        </small>
+      </h1>
+    </div>
+  </div>
+  <script>
+    let backToHome = () => {
+      let delay = 5
+      let counter = $('.counter')
+      /**
+       * 每秒计时器减一，当计时器为0时返回登录页
+      */
+      let countDown = setInterval(() => {
+        delay -= 1
+        counter.html(delay)
+        if (delay === 0) {
+          clearInterval(countDown)
+          location.replace(`/admin/login`)
+        }
+      }, 1 * 1000)
+    }
+    backToHome()
+  </script>
+</body>
+
+</html>
