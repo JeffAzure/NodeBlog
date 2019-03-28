@@ -1,2 +1,3 @@
 # NodeBlog
-a full-stack blog project node + bootstrap + mongo
+a full-stack blog project  **node + bootstrap + mongo**
+
