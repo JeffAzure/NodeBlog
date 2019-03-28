@@ -1,7 +1,7 @@
 # NodeBlog 
 a full-stack blog project  **node + bootstrap + mongo**  
-[front end](https://myblog.heartbrokenkid.com/)  
-[admin end](https://myblog.heartbrokenkid.com/admin/)  
+[view as admin](https://myblog.heartbrokenkid.com/admin)    
+~~test account admin 000000~~
 
 ## to run the project?
 1. make sure u have a **node + mongo** environment
