@@ -1,5 +1,7 @@
-# NodeBlog
-a full-stack blog project  **node + bootstrap + mongo**
+# NodeBlog 
+a full-stack blog project  **node + bootstrap + mongo**  
+[front end](https://myblog.heartbrokenkid.com/)  
+[admin end](https://myblog.heartbrokenkid.com/admin/)  
 
 ## to run the project?
 1. make sure u have a **node + mongo** environment
